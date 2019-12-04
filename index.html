@@ -10,17 +10,18 @@
     <script src="assets/javascript/java.js"></script> <!--move this to the footer before you finish the work -->
     <!--Bootstrap CSS-->
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"-->
-          <!--integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <!--integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
     <!--Offline bootstrap... change it at the end of project to online -->
     <link rel="stylesheet" href="assets/stylesheet/bootstrap.min.css">
-    <!--Bootstrap CDN complied CSS and JS-->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
     <!--jQuery-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
             crossorigin="anonymous"></script>
+    <!--Bootstrap CDN complied CSS and JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
     <!--Popper.js-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -31,7 +32,11 @@
 
 </head>
 <body>
- Hello World
+<div class="container-fluid">
+    <div class="row search-container">
+        <input type="search" id="search" Name="whereto" title="place" placeholder="Where to travel..."> <br>
+    </div>
+</div>
 </body>
 <footer class="container-fluid home">
     <div class="row">
@@ -66,4 +71,14 @@
     </div>
 
 </footer>
+<script>
+    function placeSearch() {
+    var input = document.getElementById("search");
+
+    var options = {types: ['(cities)']};
+
+    var autoComplete = new google.maps.places.Autocomplete(input, options);
+}</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8&language=en&libraries=places&callback=placeSearch&libraries=places">
+</script>
 </html>
