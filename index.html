@@ -26,23 +26,35 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
             integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
             crossorigin="anonymous"></script>
+    <!--Fontawesome icon-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!--Custom CSS-->
     <link rel="stylesheet" href="assets/stylesheet/custom.css">
 
 </head>
 <body>
+<h1>Choose your next weekend getaway destination</h1>
 <div class="container-fluid">
     <div class="row search-container">
-        <input type="search" id="search" Name="whereto" title="place" placeholder="Where to travel..."> <br>
+        <div class="col-sm-9 text-center">
+            <input type="search" id="search" Name="whereto" title="place" placeholder="Where do you want to go? Start to type the name of the city then choose from the list..."> <br>
+        </div>
+        <div class="col-sm-3 text-center">
+            <button>Reset Search</button>
+        </div>
+    </div>
+<h2>Pick your interest:</h2>
+    <div class="row interest-icons">
+        <ul class="list-inline">
+            <li class="list-inline-item"><i class="fas fa-utensils fa-3x"></i></li>
+            <li class="list-inline-item"><i class="fas fa-glass-cheers fa-3x"></i></li>
+            <li class="list-inline-item"><i class="fas fa-mug-hot fa-3x"></i></li>
+            <li class="list-inline-item"><i class="fas fa-university fa-3x"></i></li>
+            <li class="list-inline-item"><i class="fas fa-info fa-3x"></i></li>
+        </ul>
     </div>
 </div>
 <div id="map"></div>
-<div id="right-panel">
-    <h2>Results</h2>
-    <ul id="places"></ul>
-    <button id="more">More results</button>
-</div>
 </body>
 <footer class="container-fluid home">
     <div class="row">
