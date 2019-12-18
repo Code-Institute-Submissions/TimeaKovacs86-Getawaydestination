@@ -12,3 +12,23 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+/* Title, subtitle */
+h1, h2 {
+ text-align: center;
+}
+
+input {
+    width: 60%;
+}
+
+/* Interest section */
+.list-inline {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.interest-name {
+    display: inline-block;
+    text-align: center;
+}
