@@ -5,12 +5,12 @@
 
 var my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
 
-var zoom=12;
+var zoom = 12;
 
 var map;
 
-function initMap() {
-
+function initMap(fetchPlace) {
+    $('#places>li').remove();
     var searchedPlace = $('#search').val();
     var xhr = new XMLHttpRequest();
 
@@ -28,12 +28,9 @@ function initMap() {
                 zoom: zoom
             });
 
-            // Create the map.
-            // var pyrmont = {lat: -33.866, lng: 151.196};
-            // map = new google.maps.Map(document.getElementById('map'), {
-            //     center: pyrmont,
-            //     zoom: 17
-            // });
+            var actualCity = {lat: getLat, lng: getLng};
+
+
 
             // Create the places service.
             var service = new google.maps.places.PlacesService(map);
@@ -46,7 +43,7 @@ function initMap() {
 
             // Perform a nearby search.
             service.nearbySearch(
-                {location: pyrmont, radius: 500, type: ['store']},
+                {location: actualCity, radius: 500, type: [fetchPlace]},
                 function (results, status, pagination) {
                     if (status !== 'OK') return;
 
@@ -56,6 +53,35 @@ function initMap() {
                         pagination.nextPage();
                     };
                 });
+        }
+
+        function createMarkers(places) {
+            var bounds = new google.maps.LatLngBounds();
+            var placesList = document.getElementById('places');
+
+            for (var i = 0, place; place = places[i]; i++) {
+                var image = {
+                    url: place.icon,
+                    size: new google.maps.Size(71, 71),
+                    origin: new google.maps.Point(0, 0),
+                    anchor: new google.maps.Point(17, 34),
+                    scaledSize: new google.maps.Size(25, 25)
+                };
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    icon: image,
+                    title: place.name,
+                    position: place.geometry.location
+                });
+
+                var li = document.createElement('li');
+                li.textContent = place.name;
+                placesList.appendChild(li);
+
+                bounds.extend(place.geometry.location);
+            }
+            map.fitBounds(bounds);
         }
     }
 }
