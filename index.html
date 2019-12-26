@@ -40,8 +40,9 @@
             <input type="search" id="search" Name="whereto" title="place" placeholder="Where do you want to go? Start to type the name of the city then choose from the list..."> <br>
         </div>
         <div class="col-sm-4 text-left">
-            <button>Reset Search</button>
+            <button onclick="initMap()">Search</button><button>Reset Search</button>
         </div>
+
     </div>
 <h2>Pick your interest:</h2>
     <div class="row interest-icons">
@@ -92,7 +93,7 @@
 <script src="assets/javascript/initmap.js"></script>
 <script src="assets/javascript/placesearch.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8&language=en&libraries=places&callback=initMap&libraries=places">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8&language=en&libraries=places&callback=placeSearch&libraries=places">
 </script>
 
 </html>
