@@ -43,7 +43,7 @@
         </div>
         <div class="col-sm-4 text-left">
             <button onclick="initMap()">Search</button>
-            <button>Reset Search</button>
+            <button onclick="resetSearch()">Reset Search</button>
         </div>
 
     </div>
@@ -70,7 +70,7 @@
 </div>
 <div id="map"></div>
 <div id="right-panel">
-    <h2>Results</h2>
+    <h2 class="results">Results</h2>
     <ul id="places"></ul>
     <button id="more">More results</button>
 </div>
@@ -110,7 +110,7 @@
 </footer>
 <script src="assets/javascript/initmap.js"></script>
 <script src="assets/javascript/placesearch.js"></script>
-
+<script src="assets/javascript/reset.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8&language=en&libraries=places&callback=placeSearch&libraries=places">
 </script>
 

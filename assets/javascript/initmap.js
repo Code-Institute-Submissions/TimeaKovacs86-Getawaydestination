@@ -10,6 +10,9 @@ var zoom = 12;
 var map;
 
 function initMap(fetchPlace) {
+    $('#map').show();
+    $('.results').show();
+    $('#more').show();
     $('#places>li').remove();
     var searchedPlace = $('#search').val();
     var xhr = new XMLHttpRequest();
