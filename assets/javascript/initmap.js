@@ -14,6 +14,10 @@ function initMap(fetchPlace) {
     $('.results').show();
     $('#more').show();
     $('#places>li').remove();
+
+
+
+
     var searchedPlace = $('#search').val();
     var xhr = new XMLHttpRequest();
 
@@ -32,7 +36,6 @@ function initMap(fetchPlace) {
             });
 
             var actualCity = {lat: getLat, lng: getLng};
-
 
 
             // Create the places service.
