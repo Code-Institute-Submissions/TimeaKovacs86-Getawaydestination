@@ -16,8 +16,6 @@ function initMap(fetchPlace) {
     $('#places>li').remove();
 
 
-
-
     var searchedPlace = $('#search').val();
     var xhr = new XMLHttpRequest();
 
@@ -92,6 +90,10 @@ function initMap(fetchPlace) {
     }
 }
 
+if ($('#search').val("")) {
+    $('.results').hide();
+    $('#more').hide();
+}
 
 function createMarkers(places) {
     var bounds = new google.maps.LatLngBounds();

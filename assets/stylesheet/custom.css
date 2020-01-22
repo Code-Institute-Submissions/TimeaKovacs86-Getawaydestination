@@ -33,6 +33,10 @@ input {
     text-align: center;
 }
 
+#right-panel {
+    margin-bottom: 150px;
+}
+
 /* Footer */
 
 footer {
@@ -67,3 +71,19 @@ footer {
     background-color: white;
 }
 
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+
+    .custom-text-center {
+        text-align: center!important;
+    }
+}
