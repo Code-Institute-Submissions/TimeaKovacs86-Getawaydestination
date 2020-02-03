@@ -1,21 +1,29 @@
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
-    height: 50%;
-    width: 50%;
+    height: 500px;
+    width: 700px;
     margin: 0 auto;
 }
 
 /* Optional: Makes the sample page fill the window. */
 html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: url("../img/Fishermans_Bastion4.jpg") center/cover no-repeat;
 }
 
 /* Title, subtitle */
 h1, h2 {
     text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 4px 2px #222b56;
+    color: #d49411;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #222b56;
 }
 
 input {
@@ -23,6 +31,10 @@ input {
 }
 
 /* Interest section */
+.interest-icons {
+    margin-bottom: 70px;
+}
+
 .list-inline {
     margin: 0 auto;
     text-align: center;
@@ -31,10 +43,30 @@ input {
 .interest-name {
     display: inline-block;
     text-align: center;
+    height: 130px;
+    width: 130px;
+    border: #222b56 2px solid;
+    border-radius: 25%;
+}
+
+.interest-name i {
+    padding-top: 30px;
+    color: #222b56;
 }
 
 #right-panel {
     margin-bottom: 150px;
+}
+
+.results {
+    margin-top: 70px;
+}
+
+#places {
+    font-size: 20px;
+    color: #222b56;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dfab34;
 }
 
 /* Footer */
@@ -43,7 +75,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #ba8b00;
+    background-color: #fc81a2;
 }
 
 .social-links {
