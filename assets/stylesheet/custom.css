@@ -30,6 +30,12 @@ input {
     width: 60%;
 }
 
+.btn {
+    background-color: #222b56;
+    border-color: #222b56;
+    color: #dfab34;
+}
+
 /* Interest section */
 .interest-icons {
     margin-bottom: 70px;
