@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Fira+Sans|Rubik&display=swap');
+
 /* Always set the map height explicitly to define the size of the div
  * element that contains the map. */
 #map {
@@ -10,6 +12,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Amaranth', sans-serif;
 }
 
 body {
@@ -61,6 +64,7 @@ input {
 }
 
 #right-panel {
+    text-align: center;
     margin-bottom: 150px;
 }
 
@@ -69,11 +73,30 @@ input {
 }
 
 #places {
-    font-size: 20px;
-    color: #222b56;
+    padding: 0;
+    text-align: center;
+    text-shadow: 1px 1px #222b56;
+    font-size: 25px;
+    color:  #222b56;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #dfab34;
+    -webkit-text-stroke-color:   #222b56;
 }
+
+#places li {
+    width: 35%;
+    margin: 5px auto;
+    background-color: #eeb8a3;
+    opacity: 0.7;
+    border: #222b56 1px solid;
+    border-radius: 10px;
+}
+
+.no-bullet {
+    list-style-type:none;
+}
+
+
+
 
 /* Footer */
 

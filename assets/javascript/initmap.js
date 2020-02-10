@@ -47,7 +47,7 @@ function initMap(fetchPlace) {
 
             // Perform a nearby search.
             service.nearbySearch(
-                {location: actualCity, radius: 500, type: [fetchPlace]},
+                {location: actualCity, radius: 3000, type: [fetchPlace]},
                 function (results, status, pagination) {
                     if (status !== 'OK') return;
 
