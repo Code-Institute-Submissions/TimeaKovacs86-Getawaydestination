@@ -132,6 +132,13 @@ footer {
     background-color: white;
 }
 
+@media (max-width: 1023px) {
+    #map {
+        height: 500px;
+        width: 75%;
+    }
+}
+
 @media (max-width: 767px) {
     h1 {
         font-size: 30px;
@@ -148,3 +155,60 @@ footer {
         text-align: center!important;
     }
 }
+
+@media (max-width: 640px) {
+    #map {
+        height: 400px;
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 568px) {
+    #map {
+        height: 350px;
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 410px) {
+    #map {
+        height: 300px;
+        width: 75%;
+    }
+}
+
+/*@media (max-width: 568px) {
+    #map {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    #map {
+        height: 350px;
+        width: 350px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+
+    .custom-text-center {
+        text-align: center!important;
+    }
+}
+*/
