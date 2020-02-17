@@ -61,6 +61,7 @@ input {
 
 .interest-name:hover {
     background-color: #468bee;
+    transition: all 0.5s ease-in-out;
 
 }
 
@@ -102,9 +103,6 @@ input {
     list-style-type:none;
 }
 
-
-
-
 /* Footer */
 
 footer {
@@ -126,6 +124,7 @@ footer {
 
 .fab:hover {
    background-color: #fc81a2;
+   transition: all 0.5s ease-in-out;
 }
 
 .fa-facebook {
