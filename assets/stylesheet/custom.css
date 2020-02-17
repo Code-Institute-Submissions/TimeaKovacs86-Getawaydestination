@@ -39,6 +39,7 @@ input {
     color: #dfab34;
 }
 
+
 /* Interest section */
 .interest-icons {
     margin-bottom: 70px;
@@ -58,10 +59,16 @@ input {
     border-radius: 25%;
 }
 
+.interest-name:hover {
+    background-color: #468bee;
+
+}
+
 .interest-name i {
     padding-top: 30px;
     color: #222b56;
 }
+
 
 #right-panel {
     text-align: center;
@@ -115,6 +122,10 @@ footer {
     border: 3px solid;
     border-radius: 25%;
     padding: 3px;
+}
+
+.fab:hover {
+   background-color: #fc81a2;
 }
 
 .fa-facebook {
