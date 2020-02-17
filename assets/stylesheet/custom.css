@@ -154,6 +154,9 @@ footer {
     .custom-text-center {
         text-align: center!important;
     }
+      li {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -177,38 +180,8 @@ footer {
         height: 300px;
         width: 75%;
     }
-}
-
-/*@media (max-width: 568px) {
-    #map {
-        height: 300px;
-        width: 300px;
+      li {
+        font-size: 10px;
     }
 }
 
-@media (max-width: 640px) {
-    #map {
-        height: 350px;
-        width: 350px;
-    }
-
-}
-
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 30px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-    h5 {
-        font-size: 15px;
-    }
-
-    .custom-text-center {
-        text-align: center!important;
-    }
-}
-*/
