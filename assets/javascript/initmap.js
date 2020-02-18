@@ -5,9 +5,7 @@
 
 var my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
 
-var zoom = 12;
-
-var map;
+var zoom=4;
 
 function initMap(fetchPlace) {
     $('#map').show();
@@ -31,6 +29,7 @@ function initMap(fetchPlace) {
             map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: getLat, lng: getLng},
                 zoom: zoom
+
             });
 
             var actualCity = {lat: getLat, lng: getLng};

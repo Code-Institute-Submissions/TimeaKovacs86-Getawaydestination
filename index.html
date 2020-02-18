@@ -50,7 +50,7 @@
     <h2>Pick your interest:</h2>
     <div class="row interest-icons">
         <ul class="col-sm-6 list-inline ">
-            <li id="restaurant" class="list-inline-item interest-name" onclick="initMap($('#restaurant').attr('id'))"><i
+            <li id="restaurant" class="list-inline-item interest-name" onclick="initMap($('#restaurant').attr('id'))" ><i
                     class="fas fa-utensils fa-3x"></i>
                 <p>Restaurants</p></li>
             <li id="bar" class="list-inline-item interest-name" onclick="initMap($('#bar').attr('id'))"><i
@@ -74,6 +74,8 @@
     <ul id="places" class="no-bullet"></ul>
     <button id="more" class="btn btn-primary">More results</button>
 </div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up fa-2x"></i></button>
 
 </body>
 <footer class="container-fluid home">
@@ -114,5 +116,6 @@
 <script src="assets/javascript/reset.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8&language=en&libraries=places&callback=placeSearch&libraries=places">
 </script>
+<script src="assets/javascript/scroll_to_top.js"></script>
 
 </html>
