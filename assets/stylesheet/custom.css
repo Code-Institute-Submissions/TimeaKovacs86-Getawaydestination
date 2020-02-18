@@ -109,7 +109,8 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #fc81a2;
+    background-image: linear-gradient(to bottom right, #fc81a2,#fcc3f5 );
+    opacity: 0.8;
 }
 
 .social-links {
