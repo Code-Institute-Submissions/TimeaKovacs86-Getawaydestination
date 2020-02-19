@@ -5,16 +5,23 @@
 
 var my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
 
-var zoom=4;
+var zoom = 4;
 
 function initMap(fetchPlace) {
+
+
+    var searchedPlace = $('#search').val();
+
+    if (searchedPlace === "") {
+        alert("Please fill out the search field!");
+    } else{ //  Ezzel keruljuk ki a 400-as errort
+
+    //  $('.reset-button').prop("disabled", false);
     $('#map').show();
     $('.results').show();
     $('#more').show();
     $('#places>li').remove();
 
-
-    var searchedPlace = $('#search').val();
     var xhr = new XMLHttpRequest();
 
     xhr.open("GET", "https://maps.googleapis.com/maps/api/geocode/json?address=" + searchedPlace + "&key=" + my_API_key);
@@ -86,9 +93,14 @@ function initMap(fetchPlace) {
             }
             map.fitBounds(bounds);
         }
+    };
+
+    if ($('#search').val("")) {
+        $('.results').hide();
+        $('#more').hide();
     }
 }
-
+}
 if ($('#search').val("")) {
     $('.results').hide();
     $('#more').hide();

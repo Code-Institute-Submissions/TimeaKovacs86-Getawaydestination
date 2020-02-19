@@ -38,19 +38,19 @@
     <div class="row search-container">
         <div class="col-xl-8 col-md-6 text-right custom-text-center">
             <input type="search" id="search" Name="whereto" title="place"
-                   placeholder="Where do you want to go? Start to type the name of the city then choose from the list...">
+                   placeholder="Where do you want to go? Start to type the name of the city...">
             <br>
         </div>
         <div class="col-xl-4 col-md-6 text-left custom-text-center">
-            <button  onclick="initMap()" class="btn btn-primary" >Search</button>
-            <button onclick="resetSearch()" class="btn btn-primary">Reset Search</button>
+            <button onclick="initMap()" class="btn btn-primary">Search</button>
+            <button onclick="resetSearch()" class="btn btn-primary reset-button">Reset Search</button>
         </div>
 
     </div>
     <h2>Pick your interest:</h2>
     <div class="row interest-icons">
         <ul class="col-sm-6 list-inline ">
-            <li id="restaurant" class="list-inline-item interest-name" onclick="initMap($('#restaurant').attr('id'))" ><i
+            <li id="restaurant" class="list-inline-item interest-name" onclick="initMap($('#restaurant').attr('id'))"><i
                     class="fas fa-utensils fa-3x"></i>
                 <p>Restaurants</p></li>
             <li id="bar" class="list-inline-item interest-name" onclick="initMap($('#bar').attr('id'))"><i
