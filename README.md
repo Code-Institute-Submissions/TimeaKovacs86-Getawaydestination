@@ -37,3 +37,93 @@ The website is responsive, so it gives the same excellent user experience while 
 #### Social links:
 
 -As a user, I want to click on the social links so that it can be open is a new tab.
+
+#### UI:
+
+- In General:
+    - Font:
+        - I use "Amaranth" font, because it is easy and comfortable to read. I imported that font through the custom.css file from the google font repository.
+    - Icons:
+        - I use Font Awesome icon toolkit with he below mentioned icons:
+            - Restaurant
+            - Bar
+            - Cafe
+            - Museum
+            - Information 
+            - Facebook
+            - Github
+            - LinkedIn
+    - Hover effects:
+        - Search and reset search button
+        - Filter section:
+            - Restaurant icon
+            - Bar icon
+            - Coffee shop icon
+            - Museum icon
+            - Tourists attraction icon                
+        - Social links:
+            - Facebook icon
+            - Github icon
+            - LinkedIn icon 
+- On the page I have implemented:
+    - Input type:
+        - "type=search", so in this way it became more straightforward and user friendly to type in the destinations.
+    - Alert message is the search input field is empty     
+
+- Mockup
+
+
+## Features
+
+With this page you can find  restaurants, bars, coffes shops, museums and other tourist attractions around that area that you give in the search field.
+If you finished you search, you can reset the process with clicking on the reset button.
+
+### Existing Features
+
+- The main page:
+    - Field checking:
+        - If the input search field is empty and I click on one of the filter buttons, I get an alert message about that empty fiels
+    - Icons:
+        - To click on the Restaurant icon, you get back restaurants around the given city
+        - To click on the Bar icon, you get back bars around the given city
+        - To click on the Coffee shops icon, you get back coffee shops around the given city
+        - To click on Museum icon, you get back museums around the given city
+        - To click on Tourist attractions icon, you get back other tourist attractions around the given city
+    - Button:
+        - If in the first round we find more than 20 places the "More result" button become active
+        - If there are no more results, the "More result" button become disabled
+        - If there is no result around the area at all the "More result" button become disabled
+        - I can reset the search with the reset button         
+
+        
+- Responsive:
+
+    - The page is responsive, usable and looks good on the below resolution:
+        - Phones less than 768px
+        - Tablets 768px and Up
+        - Desktops 992ox and Up
+        - Large desktops 1200px and Up
+        
+### Features left to Implement
+
+## Technologies Used
+
+- [HTML5](https://www.w3.org/html/)
+    - Hypertext Markup Language is the standard markup language for creating web pages and web applications.
+- [CSS3](https://www.w3.org/Style/CSS/)
+    - Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a 
+    markup language like HTML.
+- [BootStrap 4.3.1](https://getbootstrap.com/docs/3.3/)
+    - Front End Framework for developing responsive websites.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - JavaScript is a lightweight interpreted or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages.
+- [JQuery 3.4.1](https://jquery.com)
+    - The project uses to simplify DOM manipulation.
+- [Git](https://git-scm.com/)
+    - Git is a distributed version-control system for tracking changes in source code during software development.
+- [GitHub](https://github.com/)
+    -  GitHub Inc. is a web-based hosting service for version control using Git.
+- [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
+    - The Maps JavaScript API lets you customize maps with your own content.
+    - Library used:
+        - Google Places API
