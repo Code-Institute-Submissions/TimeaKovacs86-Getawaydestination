@@ -72,6 +72,13 @@ The website is responsive, so it gives the same excellent user experience while 
 
 - Mockup
 
+    - **Created with [Balsamiq Mockups 3](https://balsamiq.com/) that is a user interface design tool**
+    - **Getaway mockup desktop**:
+        ![Home page](Mockups/Getaway_mockup_desktop.png)
+    - **Getaway mockup ipad**:
+        ![Home page](Mockups/Getaway_mockup_ipad.png)
+    - **Getaway mochup iphone**:
+        ![Home page](Mockups/Getaway_mockup_iphone.png)
 
 ## Features
 
@@ -127,3 +134,201 @@ If you finished you search, you can reset the process with clicking on the reset
     - The Maps JavaScript API lets you customize maps with your own content.
     - Library used:
         - Google Places API
+        
+## Testing
+
+Thanks to the "GitHub Pages" option on the GitHub website everybody can reach my website with clicking on the [link](https://timeakovacs86.github.io/Getawaydestination/)
+I prefer the GitHub Pages option instead of the Cloud9 because it is stable and available 24/7.
+
+**Test types:**
+- Manual tests
+    - Non-Functional tests
+        - **Usability:** Usability testing is a technique used in user-centered interaction design to evaluate a product by testing it on users. 
+        This can be seen as an irreplaceable usability practice, since it gives direct input on how real users use the system. 
+        Shortly: The ease of use and learn to use the website
+        - **Reliability:** Reliability testing is defined as a software testing type, that checks whether the software can 
+        perform a failure-free operation for a specified period of time in a specified environment. 
+            - Stable and consistent result
+            - I will get the same result even if I search for the place on Pc, Tablet or Mobile Phone.
+            - See test cases under the "Responsive" section 
+- [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) validator:
+    - With these validator I was ensured that after the scanning this code it does not shows me any detected errors.
+    
+### Testing the user stories:
+#### Home Page:
+
+- Scenario: As a user, I want to get feedback if the searching field is empty
+    - I don't fill the search field and I click on he <filter_icon>. 
+    - Alert message is appears.
+    
+|filter_icon|
+|:---------:|
+|Restaurants|
+|Bars      |
+|Coffee shops|
+|Museums|
+|Tourist attractions|
+
+- Scenario: As a user, I want to find cities for holiday destinations
+    - I type a holiday destination into the search field
+    - I choose a city from the drop-down
+    - I click on the <filter_icon>
+    - I get back the city filtered by the <filter_icon>
+    
+|filter_icon|
+|:---------:|
+|Restaurants|
+|Bars      |
+|Coffee shops|
+|Museums|
+|Tourist attractions|
+
+- As a user, I want to see the other opportunity around the city without type the city again
+    - I type a holiday destination into the search field
+    - I choose a city from the drop-down
+    - I click on the <filter_icon>
+    - I get back the city filtered by the<filter_icon>
+    - I click another <filter_icon>
+    - I get back <filter_icon> from the given city
+
+|filter_icon|
+|:---------:|
+|Restaurants|
+|Bars      |
+|Coffee shops|
+|Museums|
+|Tourist attractions|
+
+- Scenario: As a user, I want to find <sight> around the searched city
+    - I type a holiday destination into the search field
+    - I choose a city from the drop-down
+    - I click one of the <sight>
+    - I get back a list of <sight> in the given destination city
+
+|sight      |
+|:---------:|
+|Restaurants|
+|Bars      |
+|Coffee shops|
+|Museums|
+|Tourist attractions|
+
+- Scenario: As a user, I want to see more result if there are more
+    - I type a holiday destination into the search field
+    - I choose a city from the drop-down
+    - I get back more result than 20
+    - The More result button is active
+    - I click on the More result button
+    - Additional 20 places are appearing
+    
+- Scenario: As a user, I want to reset my search
+    - I type a holiday destination into the search field
+    - I choose a city from the drop-down
+    - I get back the result
+    - The Reset button appear
+    - I click on the Reset button
+    - The map and the result are disappear the search field became empty and the we go back on the top of the page 
+    
+#### Responsive:
+
+- I grab the edge of the browser and modify the resolution. After this the website is still usable and looks good.
+- Chrome developer tools: details below at the **Chrome Developer Tool** section
+- I test the website with different devices (Pc, Tablet, Mobile phone)
+
+#### Effects:
+
+- Scenario: As a user I want to see the hover effects on the icons so that I can see there is interaction wih those elements.
+    - I hover my mouse over the <icon> 
+    - I can see the transition effect
+
+|icon      |
+|:--------:|
+|Restaurants|
+|Bars      |
+|Coffee shops|
+|Museums|
+|Tourist attractions|
+|Facebook |
+|GitHub    |
+|LinkedIn  | 
+
+
+- Scenario: After clicking the filter icon the map direct to the map
+    - I type a destination
+    - I choose a destination
+    - I click one of the filter button
+    - The page will direct me to the map
+
+#### Social links:
+
+- I click on the <social_link> social link and the page will open in a new tab
+        
+|social_link|
+|:---------:|
+|Facebook     |
+|GitHub     |
+|LinkedIn   |
+
+**Tested browsers:**
+ - Chrome
+ - Mozilla Firefox
+ - Microsoft Edge
+
+**Testing Tools:**
+ - Chrome browser built-in developer tool
+ - PC with full HD resolution (with real usage)
+ - Mobile Phones: 
+    - iPhone SE
+    - Google Pixel 3
+    - OnePlus 6T
+
+**Chrome Developer Tool:**
+- I made boundary testing on the edges where the resolution changed from:
+    - Large desktop to desktop (Tested pixel width values: 1201px, 1200px, 1199px)
+    - Desktop to tablet (Tested pixel width values: 993px, 992px, 991px)
+    - Tablet to phone (Tested pixel width values: 769px, 768px, 767px)
+- Console log error checking on the page during the testing
+ 
+**Testing people:**
+- Friends
+- Myself
+
+
+## Deployment
+
+How I implement this project:
+
+First I built the basic functionality one of my private repository until I get the first working version of the website. 
+After this I copied the code snippets in this public repository, and explained the actual small pieces of the commits int he commit comment section.
+
+ - **Set up**:
+    - I use local IDe for create a project, I installed the Git locally and synchronized my local IDE with a local git. I use IntelliJ Pycharm for the front end development with its helpful built in deployment tools.
+      After I created a Git and GitHub repository, I could start to work and I could test my features locally.
+      I could see my changes locally by open my index.html file with a View/Open browser menu option in my local IDE.
+      Here I could choose the required browser which I want to use. (Chrome, Mozzila, etc.)
+ 
+ - **Commits**:
+    - After every small piece of increment, I made a commit to my local Git repository. After that in the end of the bigger section that gives value to my project I pushed my modification to my online GitHub repository.
+    
+ - **Local and online deployment**:
+    - Locally: it is very easy to clone repository from my account if you follow these steps:
+        1. Follow this link [Project GitHub repository](https://github.com/TimeaKovacs86/Getawaydestination) 
+        2. Under the repository name, click "Clone or download".
+        3. Here you have to copy the url's of the repository
+        4. In your local IDE you can choose to create new project from version control/Git 
+        5. Paste the link there that you copied before
+        6. For additional help you can more information under this [link](https://help.github.com/en/articles/cloning-a-repository) 
+        
+    - Online:
+        - When there was a working increment after pushing it to my online GitHub repository I could test it online with real usage.
+        For this I followed these steps:
+            1. Under [my project GitHub directory](https://github.com/TimeaKovacs86/Getawaydestination) from the menu items I clicked on the Settings 
+            2. Under the GitHub Pages section I could set up my online site from my master branch.
+            3. After few minutes the online deployed site was available the given [link](https://timeakovacs86.github.io/Getawaydestination/)       
+    
+
+### Media
+
+ - The photo used in this website were obtained from:
+    - Wallpaper:
+        - https://www.followmeaway.com/wp-content/uploads/2019/05/fishermans-bastion-view-from-large-turret.jpg    
