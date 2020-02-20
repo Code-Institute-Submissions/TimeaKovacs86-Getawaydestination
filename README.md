@@ -25,6 +25,8 @@ The website is responsive, so it gives the same excellent user experience while 
 - As a user, I want to find coffee shops around the searched city.
 - As a user, I want to find museums around the searched city.
 - As a user, I want to see what kind of other opportunities I have as a tourist around the searched city.
+- As a user, I want to see more result if there are more.
+- As a user, I want to reset my search.
 
 #### Responsive:
 
@@ -101,10 +103,8 @@ If you finished you search, you can reset the process with clicking on the reset
         - If there are no more results, the "More result" button become disabled
         - If there is no result around the area at all the "More result" button become disabled
         - I can reset the search with the reset button         
-
         
 - Responsive:
-
     - The page is responsive, usable and looks good on the below resolution:
         - Phones less than 768px
         - Tablets 768px and Up
@@ -120,7 +120,7 @@ If you finished you search, you can reset the process with clicking on the reset
 - [CSS3](https://www.w3.org/Style/CSS/)
     - Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a 
     markup language like HTML.
-- [BootStrap 4.3.1](https://getbootstrap.com/docs/3.3/)
+- [BootStrap 4.4.1](https://getbootstrap.com/docs/4.4/)
     - Front End Framework for developing responsive websites.
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     - JavaScript is a lightweight interpreted or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages.
@@ -225,9 +225,8 @@ I prefer the GitHub Pages option instead of the Cloud9 because it is stable and 
     - I type a holiday destination into the search field
     - I choose a city from the drop-down
     - I get back the result
-    - The Reset button appear
     - I click on the Reset button
-    - The map and the result are disappear the search field became empty and the we go back on the top of the page 
+    - The map and the result are disappear the search field became empty
     
 #### Responsive:
 
@@ -332,3 +331,5 @@ After this I copied the code snippets in this public repository, and explained t
  - The photo used in this website were obtained from:
     - Wallpaper:
         - https://www.followmeaway.com/wp-content/uploads/2019/05/fishermans-bastion-view-from-large-turret.jpg    
+    - Favicon:
+        - https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fcompass%2F5796%2F&psig=AOvVaw2sBH2Bkfpq0cFrrbsSeYRV&ust=1582315878513000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDS8Zj44OcCFQAAAAAdAAAAABAE    
