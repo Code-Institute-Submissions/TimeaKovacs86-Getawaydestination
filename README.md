@@ -104,7 +104,7 @@ If you finished you search, you can reset the process with clicking on the reset
         - Desktops 992ox and Up
         - Large desktops 1200px and Up
         
-### Features left to Implement
+
 
 ## Technologies Used
 
