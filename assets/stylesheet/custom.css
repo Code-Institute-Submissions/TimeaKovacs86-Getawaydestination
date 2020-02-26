@@ -38,7 +38,7 @@ input {
 }
 
 ::-webkit-input-placeholder {
-   text-align: center;
+    text-align: center;
 }
 
 .btn {
@@ -205,8 +205,10 @@ footer {
         height: 400px;
         width: 75%;
     }
-        #places li {
+
+    #places li {
         width: 65%;
+        letter-spacing: 1px;
     }
 }
 
