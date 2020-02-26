@@ -1,10 +1,6 @@
-// This example requires the Places library. Include the libraries=places
-// parameter when you first load the API. For example:
-// <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+const my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
 
-var my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
-
-var zoom = 12;
+const zoom = 12;
 
 function initMap(fetchPlace) {
 
@@ -15,7 +11,6 @@ function initMap(fetchPlace) {
         alert("Please fill out the search field!");
     } else {
 
-        //  $('.reset-button').prop("disabled", false);
         $('#map').show();
         $('.results').show();
         $('#more').show();

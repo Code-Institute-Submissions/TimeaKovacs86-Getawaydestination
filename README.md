@@ -85,8 +85,10 @@ The website is responsive, so it gives the same excellent user experience while 
 
 ## Features
 
-With this page you can find  restaurants, bars, coffes shops, museums and other tourist attractions around that area that you give in the search field.
-If you finished you search, you can reset the process with clicking on the reset button.
+On this page we can search for any getaway destinations we would like to visit.
+With this page you can find  restaurants, bars, coffee shops, museums and other tourist attractions around that area that we type in the search field.
+If we finished our search, we can reset the process with clicking on the reset button.
+When we have a list of results, we got a scroll to top button.
 
 ### Existing Features
 
@@ -333,4 +335,8 @@ After this I copied the code snippets in this public repository, and explained t
     - Wallpaper:
         - https://www.followmeaway.com/wp-content/uploads/2019/05/fishermans-bastion-view-from-large-turret.jpg    
     - Favicon:
-        - https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fcompass%2F5796%2F&psig=AOvVaw2sBH2Bkfpq0cFrrbsSeYRV&ust=1582315878513000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDS8Zj44OcCFQAAAAAdAAAAABAE    
+        - https://www.google.com/url?sa=i&url=https%3A%2F%2Fthenounproject.com%2Fterm%2Fcompass%2F5796%2F&psig=AOvVaw2sBH2Bkfpq0cFrrbsSeYRV&ust=1582315878513000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNDS8Zj44OcCFQAAAAAdAAAAABAE  
+        
+### Pieces of code from w3schools
+ - Scroll to top button:
+    - https://www.w3schools.com/howto/howto_js_scroll_to_top.asp          

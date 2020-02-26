@@ -4,5 +4,4 @@ function resetSearch() {
     $('.results').hide();
     $('#more').hide();
     $('#search').val("");
-  //  $('.reset-button').prop('disabled', true);
 }
