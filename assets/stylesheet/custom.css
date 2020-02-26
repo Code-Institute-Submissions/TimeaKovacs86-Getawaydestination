@@ -230,5 +230,8 @@ footer {
         font-size: 15px;
     }
 
+    .social-links .list-inline-item {
+        margin: 0;
+    }
 }
 
