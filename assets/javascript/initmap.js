@@ -4,7 +4,7 @@
 
 var my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
 
-var zoom = 4;
+var zoom = 12;
 
 function initMap(fetchPlace) {
 
@@ -39,29 +39,34 @@ function initMap(fetchPlace) {
                 });
 
                 var actualCity = {lat: getLat, lng: getLng};
+                if (fetchPlace === undefined) {
+                    $('.results').hide();
+                    $('#more').hide();
+                } else {
+
+                    // Create the places service.
+                    var service = new google.maps.places.PlacesService(map);
+                    var getNextPage = null;
+                    var moreButton = document.getElementById('more');
+                    moreButton.onclick = function () {
+                        moreButton.disabled = true;
+                        if (getNextPage) getNextPage();
+                    };
+                    // Perform a nearby search.
+                    service.nearbySearch(
+                        {location: actualCity, radius: 3000, type: [fetchPlace]},
+
+                        function (results, status, pagination) {
+                            if (status !== 'OK') return;
+                            createMarkers(results);
+                            moreButton.disabled = !pagination.hasNextPage;
+                            getNextPage = pagination.hasNextPage && function () {
+                                pagination.nextPage();
+                            };
 
 
-                // Create the places service.
-                var service = new google.maps.places.PlacesService(map);
-                var getNextPage = null;
-                var moreButton = document.getElementById('more');
-                moreButton.onclick = function () {
-                    moreButton.disabled = true;
-                    if (getNextPage) getNextPage();
-                };
-
-                // Perform a nearby search.
-                service.nearbySearch(
-                    {location: actualCity, radius: 3000, type: [fetchPlace]},
-                    function (results, status, pagination) {
-                        if (status !== 'OK') return;
-
-                        createMarkers(results);
-                        moreButton.disabled = !pagination.hasNextPage;
-                        getNextPage = pagination.hasNextPage && function () {
-                            pagination.nextPage();
-                        };
-                    });
+                        });
+                }
             }
 
             function createMarkers(places) {

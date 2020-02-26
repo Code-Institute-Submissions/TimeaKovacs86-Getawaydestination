@@ -18,6 +18,7 @@ The website is responsive, so it gives the same excellent user experience while 
 
 #### Home page
 
+- As a user, I want to see the searched city without any markers when I am clicking on the search button without any searching criteria.
 - As a user, I want to get feedback is the searching field is empty.
 - As a user, I want to find cities for vacation destination.
 - As a user, I want to find restaurants around the searched city.
@@ -158,7 +159,7 @@ I prefer the GitHub Pages option instead of the Cloud9 because it is stable and 
 #### Home Page:
 
 - Scenario: As a user, I want to get feedback if the searching field is empty
-    - I don't fill the search field and I click on he <filter_icon>. 
+    - I don't fill the search field and I click on the <filter_icon>. 
     - Alert message is appears.
     
 |filter_icon|
@@ -301,7 +302,7 @@ First I built the basic functionality one of my private repository until I get t
 After this I copied the code snippets in this public repository, and explained the actual small pieces of the commits int he commit comment section.
 
  - **Set up**:
-    - I use local IDe for create a project, I installed the Git locally and synchronized my local IDE with a local git. I use IntelliJ Pycharm for the front end development with its helpful built in deployment tools.
+    - I use local IDE to create a project, I installed the Git locally and synchronized my local IDE with a local git. I use IntelliJ Pycharm for the front end development with its helpful built in deployment tools.
       After I created a Git and GitHub repository, I could start to work and I could test my features locally.
       I could see my changes locally by open my index.html file with a View/Open browser menu option in my local IDE.
       Here I could choose the required browser which I want to use. (Chrome, Mozzila, etc.)

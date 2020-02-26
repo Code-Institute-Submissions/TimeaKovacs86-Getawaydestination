@@ -25,13 +25,23 @@ h1, h2 {
     text-align: center;
     letter-spacing: 2px;
     text-shadow: 4px 2px #222b56;
-    color: #d49411;
+    color: #fcc3f5;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #222b56;
+
+}
+
+#search {
+    border-radius: 20px;
+    margin-bottom: 15px;
 }
 
 input {
-    width: 60%;
+    width: 70%;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
 }
 
 .btn {
@@ -59,21 +69,20 @@ input {
     width: 130px;
     border: #222b56 2px solid;
     border-radius: 25%;
-
+    transition: all 0.5s ease-in-out;
+    background-color: #fafafa;
 }
 
 .interest-name:hover {
     background-color: #468bee;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
-
 }
 
 .interest-name i {
     padding-top: 30px;
     color: #222b56;
 }
-
 
 #right-panel {
     text-align: center;
@@ -108,21 +117,21 @@ input {
 }
 
 #myBtn {
-  display: none;
-  position: fixed;
-  bottom: 100px;
-  right: 30px;
-  border: none;
-  outline: none;
-  background-color: #fc81a2;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #fc81a2;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
 
 }
 
 #myBtn:hover {
-  background-color:  #468bee;
+    background-color: #468bee;
 }
 
 /* Footer */
@@ -143,6 +152,7 @@ footer {
     border: 3px solid;
     border-radius: 25%;
     padding: 3px;
+    transition: all 0.5s ease-in-out;
 }
 
 .fab:hover {
@@ -199,7 +209,9 @@ footer {
         height: 400px;
         width: 75%;
     }
-
+        #places li {
+        width: 65%;
+    }
 }
 
 @media (max-width: 568px) {
@@ -217,7 +229,8 @@ footer {
     }
 
     li {
-        font-size: 10px;
+        font-size: 15px;
     }
+
 }
 
