@@ -1,4 +1,4 @@
-const my_API_key = "AIzaSyDtRwOm65-mxXVVt4lLrE7mQ-PW1tdR5O8";
+const my_API_key = "AIzaSyCNXnNFpaESzRBG8_48cLb0-J1GjB6sYoE";
 
 const zoom = 12;
 
